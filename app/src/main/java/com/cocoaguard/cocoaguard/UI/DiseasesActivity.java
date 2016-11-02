@@ -1,5 +1,6 @@
-package com.cocoaguard.cocoaguard;
+package com.cocoaguard.cocoaguard.UI;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -12,6 +13,8 @@ import android.widget.TextView;
 
 
 import com.cocoaguard.cocoaguard.Model.ModelData;
+import com.cocoaguard.cocoaguard.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +27,7 @@ public class DiseasesActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diseases);
+        super.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

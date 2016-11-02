@@ -1,8 +1,7 @@
-package com.cocoaguard.cocoaguard;
+package com.cocoaguard.cocoaguard.UI;
 
-import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -14,6 +13,7 @@ import android.widget.TextView;
 
 
 import com.cocoaguard.cocoaguard.Model.ModelData;
+import com.cocoaguard.cocoaguard.R;
 
 
 import java.util.ArrayList;
@@ -28,6 +28,7 @@ public class PesticideActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pesticide);
+        super.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

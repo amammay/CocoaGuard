@@ -72,9 +72,9 @@ public class FertilizerDescription extends AppCompatActivity {
                 "Sulfur (S) - 10%\n" +
                 "Water content maximum - 2%\n");
 
-        usageText.setText("Measure out proper fertilizer amount to use based on land size (can be measured weight)\n" +
-                "Dig a hole to put the fertilizer into at the base of the tree\n" +
-                "Fill the hole back in and perform consistent maintenance \n");
+        usageText.setText("Measure out proper fertilizer amount to use based on land size (can be measured weight)\n\n" +
+                "Dig a hole to put the fertilizer into at the base of the tree\n\n" +
+                "Fill the hole back in and perform consistent maintenance\n\n");
 
         warningsText.setText("Plant fertilizer and household plant food poisoning can occur if someone swallows these substances.\n\n" +
                 "Plant fertilizers are mildly poisonous if swallowed in small doses. Larger doses can be harmful to children. Touching large " +

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:background="@mipmap/cocoa_tree"
-    >
+    android:background="@mipmap/cocoa_tree" >
+
+    <!--Search Bar at top of page-->
     <SearchView
         android:layout_width="292dp"
         android:layout_height="wrap_content"
@@ -24,7 +23,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="200dp" />
 
-
+    <!--Grid Layout for Buttons-->
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -37,8 +36,9 @@
         android:columnCount="2"
         android:layout_below="@id/searchViewSymptom">
 
+        <!--Camera Button-->
         <Button
-            android:text="Camera"
+            android:text="@string/Camera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonCamera"
@@ -46,13 +46,12 @@
             android:layout_column="1"
             android:layout_gravity="end"
             android:layout_marginTop="12dp"
-            android:width="170dp"
-            android:background="@color/greenButton"
-            />
+            android:width="150dp"
+            android:background="@color/greenButton" />
 
+        <!--Map Button-->
         <Button
-            android:text="Maps"
-
+            android:text="@string/Maps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonMaps"
@@ -60,99 +59,85 @@
             android:layout_column="0"
             android:layout_gravity="end"
             android:layout_marginTop="12dp"
-            android:width="170dp"
-            android:background="@color/greenButton"
-            />
+            android:width="150dp"
+            android:background="@color/greenButton" />
 
+        <!--Social Media Button-->
         <Button
             android:text="@string/Social_Media"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonSocialMedia"
-            android:width="170dp"
+            android:width="150dp"
             android:layout_row="2"
             android:layout_column="1"
             android:layout_gravity="end"
             android:layout_marginTop="12dp"
-            android:background="@color/greenButton"
-            />
+            android:background="@color/greenButton" />
 
+        <!--Cost Estimator Button-->
         <Button
             android:text="@string/Cost_Estimator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonCostEstimator"
-            android:width="170dp"
+            android:width="150dp"
             android:layout_row="2"
             android:layout_column="0"
-            android:layout_gravity="left"
+            android:layout_gravity="start"
             android:layout_marginTop="12dp"
-            android:background="@color/greenButton"
+            android:background="@color/greenButton" />
 
-
-            />
-
+        <!--Fungicide Button-->
         <Button
             android:text="@string/Fungicide"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonFungicide"
-            android:width="170dp"
+            android:width="150dp"
             android:layout_row="0"
             android:layout_column="0"
-            android:layout_gravity="left"
+            android:layout_gravity="start"
             android:layout_marginTop="12dp"
-            android:background="@color/greenButton"
+            android:background="@color/greenButton" />
 
-
-            />
-
-
+        <!--Fertilizer Button-->
         <Button
             android:text="@string/Fertilizer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonFertilizer"
-            android:width="170dp"
+            android:width="150dp"
             android:layout_row="1"
             android:layout_column="1"
-            android:layout_gravity="right"
+            android:layout_gravity="end"
             android:layout_marginTop="12dp"
-            android:background="@color/greenButton"
+            android:background="@color/greenButton" />
 
-            />
-
+        <!--Disease Button-->
         <Button
             android:text="@string/Diseases"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonDiseases"
-            android:width="170dp"
+            android:width="150dp"
             android:layout_row="1"
             android:layout_column="0"
-            android:layout_gravity="left"
+            android:layout_gravity="end"
             android:layout_marginTop="12dp"
-            android:background="@color/greenButton"
+            android:background="@color/greenButton" />
 
-            />
-
+        <!--Pesticide Button-->
         <Button
             android:text="@string/Pesticide"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonPesticide"
-            android:width="170dp"
+            android:width="150dp"
             android:layout_row="0"
             android:layout_column="1"
-            android:layout_gravity="right"
+            android:layout_gravity="end"
             android:layout_marginTop="12dp"
-            android:background="@color/greenButton"
-            />
+            android:background="@color/greenButton" />
     </GridLayout>
-
-
-
-
-
-
 </RelativeLayout>

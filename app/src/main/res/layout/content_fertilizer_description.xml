@@ -40,8 +40,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/buttonInformationDesc"
                 android:layout_gravity="start"
-                android:layout_marginBottom="75dp"
-                android:background="@color/testButton3"
+                android:layout_marginBottom="50dp"
+                android:background="@color/greenButton"
                 />
 
             <Button
@@ -52,8 +52,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/buttonIngredientsDesc"
                 android:layout_gravity="end"
-                android:layout_marginBottom="75dp"
-                android:background="@color/testButton5"
+                android:layout_marginBottom="50dp"
+                android:background="@color/greenButton"
                 />
 
             <Button
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:id="@+id/buttonUsageDesc"
-                android:background="@color/testButton2"
+                android:background="@color/greenButton"
 
                 />
 
@@ -76,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:id="@+id/buttonWarningsDesc"
-                android:background="@color/yellowButton"
+                android:background="@color/greenButton"
                 />
         </GridLayout>
 
@@ -102,8 +102,8 @@
             android:layout_marginBottom="85dp"
             android:layout_below="@id/labelNameDesc"
             android:foregroundGravity="center"
-            android:scaleX="1.5"
-            android:scaleY="1.5"
+            android:scaleX="1"
+            android:scaleY="1"
             android:layout_marginTop="30dp"
             />
 

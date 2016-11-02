@@ -1,11 +1,10 @@
-package com.cocoaguard.cocoaguard;
+package com.cocoaguard.cocoaguard.UI;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -17,6 +16,7 @@ import android.widget.TextView;
 
 
 import com.cocoaguard.cocoaguard.Model.ModelData;
+import com.cocoaguard.cocoaguard.R;
 import com.cocoaguard.cocoaguard.description.FertilizerDescription;
 
 import java.util.ArrayList;
@@ -31,6 +31,7 @@ public class FertilizerActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fertilizer);
+        super.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

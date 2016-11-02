@@ -1,7 +1,11 @@
 <resources>
+
     <string name="app_name">CocoaGuard</string>
     <string name="action_settings">Settings</string>
+
+    <!--Conent Main -->
     <string name="Diseases">Diseases</string>
+    <string name="Maps">Map</string>
     <string name="Camera">Camera</string>
     <string name="Social_Media">Social Media</string>
     <string name="Fungicide">Fungicide</string>
@@ -23,7 +27,7 @@
     <string name="Other_Costs">Other cost(s)</string>
     <string name="Gross_income">Gross income</string>
     <string name="Calculate_Profit">Calculate Profit</string>
-    <string name="Total_Profit">Total Profit: + $54,000</string>
+    <string name="Total_Profit">Total Profit: 0 GHC</string>
     <string name="title_activity_fertilizer_description">Fertilizer</string>
 
 
@@ -36,8 +40,10 @@
 
 
     <!-- Misc. buttons-->
-    <string name="Ok_Button">Ok</string>
-    <string name="title_activity_social_media">SocialMediaActivity</string>
+    <string name="Ok_Button">OK</string>
+    <string name="title_activity_social_media">Social Media</string>
+    <string name="Facebook">Facebook</string>
+
 
 
 </resources>

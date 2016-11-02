@@ -10,11 +10,11 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.cocoaguard.cocoaguard.SocialMediaActivity"
+    tools:context="com.cocoaguard.cocoaguard.UI.SocialMediaActivity"
     tools:showIn="@layout/activity_social_media">
 
     <Button
-        android:text="Facebook"
+        android:text="@string/Facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/buttonFacebook"
@@ -22,5 +22,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:background="@color/facebookBlue"
+        android:textColor="@color/buttonWhite"
+        />
 </RelativeLayout>

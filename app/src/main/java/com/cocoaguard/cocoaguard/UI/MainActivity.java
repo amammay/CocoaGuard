@@ -1,6 +1,7 @@
-package com.cocoaguard.cocoaguard;
+package com.cocoaguard.cocoaguard.UI;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+
+import com.cocoaguard.cocoaguard.R;
 
 import java.util.Locale;
 
@@ -25,15 +28,17 @@ public class MainActivity extends AppCompatActivity
     private Button socialMediaButton;
     private Button mapButton;
 
-
+    //10 - 29 - 2016 updated the lock orientation and commented content main xml
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        super.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        //super.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
 
-        //Initialize the buttons
+        // the buttons
         cameraButton = (Button) findViewById(R.id.buttonCamera);
         pesticideButton = (Button) findViewById(R.id.buttonPesticide);
         fungicideButton = (Button) findViewById(R.id.buttonFungicide);
@@ -120,11 +125,12 @@ public class MainActivity extends AppCompatActivity
         });
 
         mapButton.setOnClickListener(new View.OnClickListener(){
-            double latitude = 7.624379;
-            double longitude = -1.615669;
+            double latitude = 7.942206;
+            double longitude = -1.269891;
+
             public void onClick(View view)
             {
-                String uri = String.format(Locale.ENGLISH, "geo:%f,%f",latitude, longitude);
+                String uri = String.format(Locale.ENGLISH, "geo:%f,%f?z=8",latitude, longitude);
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                 startActivity(intent);
             }
