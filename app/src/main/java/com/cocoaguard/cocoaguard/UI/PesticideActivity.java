@@ -99,6 +99,4 @@ public class PesticideActivity extends AppCompatActivity
             //return super.getView(position, convertView, parent);
         }
     }
-
-
 }
