@@ -45,7 +45,7 @@
         android:layout_alignLeft="@+id/labelNameShort"
         android:layout_alignStart="@+id/labelNameShort"
         android:id="@+id/labelNameLong"
-        android:layout_below="@+id/diseasesIcon" />
+        android:layout_alignBottom="@+id/diseasesIcon" />
 
 
 
